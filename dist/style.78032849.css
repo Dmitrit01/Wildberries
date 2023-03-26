@@ -20,5 +20,90 @@
 .main-container{
     padding: 0 10px;
 }
+.main {
+  padding: 0 13px;
+  margin-top: 55px;
+}
+
+.slider__dot,
+.slider__right-button,
+.slider__left-button {
+  padding: 15px;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid black;
+  background: rgba(128, 128, 128, 0.39);
+  cursor: pointer;
+  z-index: 5;
+}
+
+.slider__dot {
+  padding: 8px;
+}
+
+.container {
+  max-width: 1450px;
+  margin: auto;
+  border-radius: 35px;
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+.slider {
+  position: relative;
+}
+.slider__container {
+  width: 7250px;
+  max-height: 233px;
+  display: flex;
+  transform: translateX(0px);
+  transition: 5s ease;
+}
+.slider__container:hover {
+  transform: translateX(-5800px);
+}
+.slider__item {
+  max-width: 1450px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.slider__buttons {
+  width: 100%;
+  height: max-content;
+  position: absolute;
+  display: flex;
+  margin: auto;
+  top: 0;
+  bottom: 35px;
+}
+.slider__left-button {
+  left: 15px;
+}
+.slider__right-button {
+  right: 15px;
+}
+.slider__dots-wrapper {
+  width: max-content;
+  margin: auto;
+  bottom: 10px;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+.slider__dot {
+  position: relative;
+  margin: 5px;
+}
+.slider__dots {
+  display: flex;
+}
+
 
 /*# sourceMappingURL=/style.78032849.css.map */
