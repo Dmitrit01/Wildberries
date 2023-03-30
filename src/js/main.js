@@ -11,7 +11,6 @@ sliderRightBtn.addEventListener("click", () => {
     currentSlide = 0;
   }
   swipeSlide(`${currentSlide}`);
-  slideDotCheck(currentSlide);
 });
 
 sliderLeftBtn.addEventListener("click", () => {
@@ -20,20 +19,19 @@ sliderLeftBtn.addEventListener("click", () => {
     currentSlide = sliderContainer.childElementCount - 1;
   }
   swipeSlide(`${currentSlide}`);
-  slideDotCheck(currentSlide);
 });
 
 sliderDots.addEventListener("click", (event) => {
   const target = event.target;
   if (!target.classList.contains("slider__dot")) return;
   const targetedDot = target.dataset.dotnum - 1;
-  swipeSlide(targetedDot);
-  slideDotCheck(targetedDot);
   currentSlide = targetedDot;
+  swipeSlide(targetedDot);
 });
 
 function swipeSlide(quantity) {
   sliderContainer.style.transform = `translateX(-${quantity * 100}%)`;
+  slideDotCheck(quantity)
 }
 
 function slideDotCheck(slide) {
