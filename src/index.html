@@ -1,28 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Wildberries</title>
-</head>
-<body>
-    <div class="modal">
-        <div class="pop_up">
-            <div class="pop_up_body">
-                <div class="pop_up_close" id="pop_up_close">&#10006</div>
-                <div class="pop_up_content">
-                    <p>корзина</p>
-                    <button class="btn_clear">очистить корзину</button>
-                </div>
-                <div class="pop_up_list">
-                    <li class="list"></li>
-                </div>
-                <span class="modal_footer">итого xxx</span>
+ </head>
+ <body>
+    <div class="wrapper">
+      <div class="main-container">
+        <div class="body">
+          <header class="header">
+            <div class="header__logo"><a href="#" alt="logo">Wildberries</a></div>
+            <div class="header__search"><input type="search" name="" id="" placeholder="Поиск..."></div>
+            <div class="header__basket"><button id="open_pop_up">Корзина</button></div>
+          </header>
+          <main class="main">
+            <section class="container">
+              <section class="slider">
+                <article class="slider__buttons">
+                  <article class="slider__left-button">←</article>
+                  <article class="slider__right-button">→</article>
+                </article>
+                <article class="slider__container">
+                  <div class="slider__item">
+                    <img src="./imges/slide-1.jpg" alt="" />
+                  </div>
+                  <div class="slider__item">
+                    <img src="./imges/slide-2.jpeg" alt="" />
+                  </div>
+                  <div class="slider__item">
+                    <img src="./imges/sdlie-3.jpeg" alt="" />
+                  </div>
+                  <div class="slider__item">
+                    <img src="./imges/slide-4.jpg" alt="" />
+                  </div>
+                  <div class="slider__item">
+                    <img src="./imges/slide-5.jpg" alt="" />
+                  </div>
+                </article>
+                <article class="slider__dots-wrapper">
+                  <article class="slider__dots">
+                    <span class="slider__dot active-dot" data-dotnum="1"></span>
+                    <span class="slider__dot" data-dotnum="2"><span></span></span>
+                    <span class="slider__dot" data-dotnum="3"></span>
+                    <span class="slider__dot" data-dotnum="4"></span>
+                    <span class="slider__dot" data-dotnum="5"></span>
+                  </article>
+                </article>
+              </section>
+            </section>
+          </main>
+          <footer class="footer">
+                    <div class="content">
+                        <h1 class="hit-product">Хиты продаж</h1>
+                        <div class="products">
+                            <section class="product">
+                                <section class="product-section">
+                                    <img class="product-img" src="./images/uxzdjlu1rbzoamsmejwu.jpg" alt="ФОТО">
+                                    <button class="product-viewing">Быстрый просмотр</button>
+                                    <section class="product-info">
+                                        <p class="discound">-10 %</p>
+                                        <img class="like-product" src="./images/like.svg"></img>
+                                    </section>
+                                </section>
+                                <div class="price">
+                                    <p class="price-new">59 400$</p>
+                                    <p class="price-old">66 000$</p>
+                                </div>
+                                <p class="product-title">Dodge Challenger III</p>
+                            </section>
+                            <section class="product">
+                                <section class="product-section">
+                                    <img class="product-img" src="./images/fd65a2c8e8faf9677b6991fbc04fcc7d.jpg" alt="ФОТО">
+                                    <button class="product-viewing">Быстрый просмотр</button>
+                                    <section class="product-info">
+                                        <p class="discound">-10 %</p>
+                                        <img class="like-product" src="./images/like.svg"></img>
+                                    </section>
+                                </section>
+                                <div class="price">
+                                    <p class="price-new">126 630$</p>
+                                    <p class="price-old">140 700$</p>
+                                </div>
+                                <p class="product-title">BMW X7 I (G07) </p>
+                            </section>
+                            <section class="product">
+                                <section class="product-section">
+                                    <img class="product-img" src="./images/tesla-model-s-updated-1.jpg" alt="ФОТО">
+                                    <button class="product-viewing">Быстрый просмотр</button>
+                                    <section class="product-info">
+                                        <p class="discound">-10 %</p>
+                                        <img class="like-product" src="./images/like.svg"></img>
+                                    </section>
+                                </section>
+                                <div class="price">
+                                    <p class="price-new">85 500$</p>
+                                    <p class="price-old">95 000$</p>
+                                </div>
+                                <p class="product-title">Tesla Model S</p>
+                            </section>
+                            <section class="product">
+                                <section class="product-section">
+                                    <img class="product-img" src="./images/logo.jpg" alt="ФОТО">
+                                    <button class="product-viewing">Быстрый просмотр</button>
+                                    <section class="product-info">
+                                        <p class="discound">-10 %</p>
+                                        <img class="like-product" src="./images/like.svg"></img>
+                                    </section>
+                                </section>
+                                <div class="price">
+                                    <p class="price-new">45 000$</p>
+                                    <p class="price-old">50 000$</p>
+                                </div>
+                                <p class="product-title">Mercedes-Benz W212</p>
+                            </section>
+                            <section class="product">
+                                <section class="product-section">
+                                    <img class="product-img" src="./images/FCEhHizWEAMmC50.jpg" alt="ФОТО">
+                                    <button class="product-viewing">Быстрый просмотр</button>
+                                    <section class="product-info">
+                                        <p class="discound">-10 %</p>
+                                        <img class="like-product" src="./images/like.svg"></img>
+                                    </section>
+                                </section>
+                                <div class="price">
+                                    <p class="price-new">122 310$</p>
+                                    <p class="price-old">135 900$</p>
+                                </div>
+                                <p class="product-title">Rolls-Royce Phantom</p>
+                            </section>
+                            <section class="product">
+                                <section class="product-section">
+                                    <img class="product-img" src="./images/forgiato-custom-wheel-lamborghini-urus-inferno-ecx-forgiato_2.0-01-23-2019_5c48b93894294_1.jpg" alt="ФОТО">
+                                    <button class="product-viewing">Быстрый просмотр</button>
+                                    <section class="product-info">
+                                        <p class="discound">-10 %</p>
+                                        <img class="like-product" src="./images/like.svg"></img>
+                                    </section>
+                                </section>
+                                <div class="price">
+                                    <p class="price-new">301 500$</p>
+                                    <p class="price-old">335 000$</p>
+                                </div>
+                                <p class="product-title">Lamborghini Urus</p>
+                            </section>
+                        </div>
+                    </div>
+                </footer>
             </div>
-        </div>
-    </div><!--Модальное окно для Расула-->  
+      </div>
+    </div>
+    
+  
+
     <script src="js/main.js" type="module"></script>
-</body>
+  </body>
 </html>

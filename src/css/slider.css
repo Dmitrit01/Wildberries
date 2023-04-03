@@ -1,0 +1,113 @@
+.main {
+  padding: 0 13px;
+  margin-top: 55px;
+}
+
+.slider__dot,
+.slider__right-button,
+.slider__left-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid black;
+  background: rgba(128, 128, 128, 0.7);
+  cursor: pointer;
+  z-index: 5;
+}
+
+.slider__dot {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  margin: 5px;
+  transition: 0.1s ease;
+}
+
+.slider__dot:hover {
+  width: 20px;
+  height: 20px;
+}
+
+.slider__dots {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1450px;
+  margin: auto;
+  border-radius: 35px;
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+.slider {
+  position: relative;
+}
+.slider__container {
+  width: 100%;
+  max-height: 233px;
+  display: flex;
+  transition: 0.4s ease;
+}
+.slider__item {
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.slider__item > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.slider__buttons {
+  width: 100%;
+  height: max-content;
+  position: absolute;
+  display: flex;
+  margin: auto;
+  top: 0;
+  bottom: 35px;
+}
+.slider__left-button {
+  left: 15px;
+}
+.slider__right-button {
+  right: 15px;
+}
+.slider__left-button,
+.slider__right-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  color: white;
+}
+.slider__dots-wrapper {
+  width: max-content;
+  margin: auto;
+  bottom: 10px;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+.active-dot {
+  width: 20px;
+  height: 20px;
+  background: black;
+  border: 1px solid grey;
+}
+@media screen and (max-width: 480px) {
+  .slider__container {
+    max-height: 180px;
+  }
+  .slider__dot,
+  .slider__right-button,
+  .slider__left-button {
+    display: none;
+  }
+}
