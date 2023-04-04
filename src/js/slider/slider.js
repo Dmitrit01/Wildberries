@@ -17,7 +17,16 @@ export function slider() {
     sliderDots,
   ];
 
+  let slideNum = 0;
   for (const slide of sliderSlides) {
+    slideNum++;
+    const dot = document.createElement("span");
+    dot.className = "slider__dot";
+    dot.dataset.dotnum = slideNum;
+    if (dot.dataset.dotnum === "1") {
+      dot.classList.add("active-dot");
+    }
+    sliderDots.append(dot);
     slide.remove();
   }
 
@@ -79,5 +88,5 @@ export function slider() {
     }, 3000);
   }
 
-    autoSlider();
+  autoSlider();
 }
