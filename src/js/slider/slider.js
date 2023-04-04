@@ -46,10 +46,12 @@ export function slider() {
   }
 
   sliderDots.addEventListener("click", (event) => {
+    let side;
     const target = event.target;
     if (!target.classList.contains("slider__dot")) return;
+    side = currentSlide < target.dataset.dotnum ? "right" : "left";
     currentSlide = target.dataset.dotnum - 1;
-    swipeSlide(currentSlide, sliderSlides, slideDelay, "right");
+    swipeSlide(currentSlide, sliderSlides, slideDelay, side);
   });
 
   sliderContainer.addEventListener("mouseout", () => {
@@ -73,9 +75,9 @@ export function slider() {
   function autoSlider() {
     autoInterval = setInterval(() => {
       currentSlide + 1 === clidesCount ? (currentSlide = 0) : currentSlide++;
-      swipeSlide(currentSlide, sliderSlides, "right", slideDelay);
+      swipeSlide(currentSlide, sliderSlides, slideDelay, "right");
     }, 3000);
   }
 
-  autoSlider();
+    autoSlider();
 }
