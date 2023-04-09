@@ -1,0 +1,97 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.header__logo {
+    border: 2px solid #505050;
+    border-radius: 10px;
+    max-width: 95px;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.header__logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 95px;
+    min-height: 50px;
+    width: 100%;
+    font-size: 18px;
+    user-select: none;
+    text-decoration: none;
+    color: black;
+}
+
+.header__search {
+    border: 2px solid #cb8a87;
+    border-radius: 10px;
+    min-height: 50px;
+    max-width: 635px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8cecc;
+}
+
+.header__search input {
+    max-width: 635px;
+    width: 100%;
+    min-height: 95%;
+    text-align: center;
+    background-color: #f8cecc;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.header__search input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+.header__search input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+.header__search input[type="search"]::-webkit-search-decoration,
+.header__search input[type="search"]::-webkit-search-cancel-button,
+.header__search input[type="search"]::-webkit-search-results-button,
+.header__search input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.header__basket {
+    border: 2px solid #b69fc0;
+    border-radius: 10px;
+    max-width: 100px;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e1d5e7;
+}
+
+.header__basket button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    max-width: 100px;
+    width: 100%;
+    min-height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 480px) { 
+
+    .header{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .header__search {
+        order: 3;
+        max-width: 100%;
+    }
+}
