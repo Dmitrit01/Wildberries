@@ -1,3 +1,6 @@
+
+import { slider } from "./slider/slider.js";
+slider();
 import { swipeSlide } from "./modules/swipeSlide.js";
 
 const sliderContainer = document.querySelector(".slider__container");
@@ -159,3 +162,4 @@ openPopUp.addEventListener('click', function(e) {
 closePopUp.addEventListener('click', () => {
   popUp.classList.remove('active');
 });
+
